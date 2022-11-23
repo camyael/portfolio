@@ -1,38 +1,174 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Rubik:wght@400;500;600;700&family=Sacramento&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body, input, textarea {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background-color: #fff4f8;
+  line-height: 1.7;
+  color: #444;
+}
+
+h1, h2, h3 {
+  color: #444;
+  font-family: 'Alata', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+#navbar nav ul {
+  text-transform: lowercase;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 40px;
+}
+
+#home {
+  margin: 90px 0 140px;
+}
+
+#home div {
+  margin: auto auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#home .hi-there {
+  font-family: 'Sacramento', cursive;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-top: -10px;
+  color: #444;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#home .presentacion h2 {
+  font-family: 'Alata', sans-serif;
+  font-size: 1.7rem;
+  margin-top: -20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#home .presentacion-area {
+  font-family: 'Alata', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #444;
+  letter-spacing: 2.8px;
+  padding: 10px 0;
+}
+
+#img-principal {
+  width: 200px;
+}
+
+#img-principal img {
+  border-radius: 50%;
+}
+
+#sobre-mi, #proyectos, #skills, #contacto {
+  margin: auto auto;
+  max-width: 80%;
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+#sobre-mi .sobre-mi_info {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  border: #7f5c73 solid 1px;
+  padding: 20px 50px;
+  text-align: left;
+}
+
+#sobre-mi h3, #skills h3 {
+  padding-bottom: 40px;
+}
+
+.sobre-mi_info img {
+  width: 100%;
+}
+
+#skills .skills-all {
+  margin: auto auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 50px;
+}
+
+#skills .skills-img {
+  background-color: #f5cde2;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  width: 100px;
+  margin: 20px 0;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+#skills .skills-img img {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#proyectos .container-proyectos {
+  margin-top: 40px;
+  position: relative;
+}
+
+#proyectos .container-proyectos::before {
+	content: "";
+	width: 5px;
+	height: 100%;
+	background: #f5cde2;
+  border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: calc(50% - 1px);
+	z-index: 1;
+}
+
+#proyectos ul li {
+  padding: 20px 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+#proyectos ul li:nth-child(2n) {
+  flex-flow: row-reverse nowrap;
+}
+
+#proyectos ul li div {
+  width: 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+#proyectos img {
+  width: 400px;
 }

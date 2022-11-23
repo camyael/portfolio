@@ -1,0 +1,34 @@
+[
+    {
+        "img" : "html5.svg",
+        "name" : "HTML 5"
+    },
+    {
+        "img" : "css3-simple.svg",
+        "name": "CSS 3"
+    },
+    {
+        "img" : "javascript.svg",
+        "name" : "Javascript"
+    },
+    {
+        "img" : "react.svg",
+        "name" : "React JS"
+    },
+    {
+        "img" : "nodejs.svg",
+        "name" : "Node JS"
+    },
+    {
+        "img" : "mongodb.png",
+        "name" : "MongoDB"
+    },
+    {
+        "img" : "git.svg",
+        "name" : "Git"
+    },
+    {
+        "img" : "github.svg",
+        "name" : "Github"
+    }
+]
