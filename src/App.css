@@ -11,7 +11,7 @@ body, input, textarea {
 }
 
 body {
-  background-color: #fff4f8;
+  background-color: #fffafc;
   line-height: 1.7;
   color: #444;
 }
@@ -19,7 +19,7 @@ body {
 h1, h2, h3 {
   color: #444;
   font-family: 'Alata', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -29,7 +29,10 @@ ul {
 }
 
 a {
+  color: #b87c8c;
   text-decoration: none;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 img {
@@ -37,6 +40,7 @@ img {
 }
 
 #navbar nav ul {
+  background-color: #fff4f8;
   text-transform: lowercase;
   display: flex;
   justify-content: space-around;
@@ -44,7 +48,8 @@ img {
 }
 
 #home {
-  margin: 90px 0 140px;
+  background-color: #fff4f8;
+  padding: 90px 0 180px;
 }
 
 #home div {
@@ -69,10 +74,24 @@ img {
 #home .presentacion-area {
   font-family: 'Alata', sans-serif;
   text-transform: uppercase;
+  white-space: nowrap;
+  border-right: 3px solid;
+  width: 23ch;
   font-size: 14px;
   color: #444;
   letter-spacing: 2.8px;
-  padding: 10px 0;
+  margin: auto auto;
+  padding: 2px 0;
+  animation: typing 2s steps(23), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from { width: 0; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent;}
 }
 
 #img-principal {
@@ -87,7 +106,7 @@ img {
   margin: auto auto;
   max-width: 80%;
   text-align: center;
-  padding-bottom: 120px;
+  padding: 60px 0 120px;
 }
 
 #sobre-mi .sobre-mi_info {
@@ -128,41 +147,47 @@ img {
   align-items: center;
 }
 
+#skills .skills-img:hover {
+  transform: scale(1.1);
+}
+
 #skills .skills-img img {
   width: 100%;
 }
 
 #proyectos .container-proyectos {
-  margin-top: 40px;
+  text-align: center;
+  max-width: 60vw;
+  margin: 40px auto 0;
   position: relative;
+  border-left: #f5cde2 solid 5px
 }
 
-#proyectos .container-proyectos::before {
-	content: "";
-	width: 5px;
-	height: 100%;
-	background: #f5cde2;
-  border-radius: 10px;
-	position: absolute;
-	top: 0;
-	left: calc(50% - 1px);
-	z-index: 1;
-}
-
-#proyectos ul li {
+#proyectos .container-proyectos ul li {
   padding: 20px 40px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   list-style: none;
+  position: relative;
 }
 
-#proyectos ul li:nth-child(2n) {
-  flex-flow: row-reverse nowrap;
+#proyectos .container-proyectos ul li::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #b87c8c;
+  border: 3px solid #b87c8c;
+  position: absolute;
+  top: auto;
+  left: -10px;
 }
 
-#proyectos ul li div {
+
+#proyectos ul li .proyectos-info {
   width: 70%;
   display: flex;
   flex-flow: column nowrap;
@@ -171,4 +196,26 @@ img {
 
 #proyectos img {
   width: 400px;
+}
+
+#proyectos .links-proyectos {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: auto auto;
+}
+
+#proyectos .links-proyectos div a {
+  display: flex;
+  flex-direction: row;
+}
+
+#proyectos .links-proyectos img {
+  width: 30px;
+}
+
+#contacto {
+  max-width: 100%;
+  height: 80vh;
+  border-top-right-radius: 50%;
+  background-color: #fff4f8;
 }
