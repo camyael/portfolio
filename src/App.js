@@ -1,11 +1,11 @@
 import './App.css';
-import NavBar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Contacto from './components/Contacto';
-import Footer from './components/Footer';
+import NavBar from './pages/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Skills from './pages/Skills';
+import Projects from './pages/Projects';
+import Contacto from './pages/Contacto';
+import Footer from './pages/Footer';
 
 function App() {
   return (

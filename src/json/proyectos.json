@@ -1,20 +1,20 @@
 [
     {
-        "img": "desarolloweb.png",
+        "img": "desarolloweb",
         "title": "Plant et Pots",
         "description": "Plant et Pots es un proyecto creado para el curso de Desarrollo Web de Coderhouse.",
         "linkGithub": "https://github.com/camyael/plant_et_pots",
         "linkDeploy": "https://plantesetpots.netlify.app"
     },
     {
-        "img": "javascript.png",
+        "img": "javascript",
         "title": "Pink Record Player",
         "description": "Proyecto diseñado a mano con HTML y CSS",
         "linkGithub": "https://github.com/camyael/pink_record_player",
         "linkDeploy": "https://camyael.github.io/pink_record_player/"
     },
     {
-        "img": "reactjs.png",
+        "img": "reactjs",
         "title": "Aquira, tienda",
         "description": "Aquira es un ecommerce ficticio, que simula un emprendimiento de ventas de productos importados de belleza. Se utilizó React Hooks para el manejo de estados y para la navegación y enrutados, React Router Dom y Firebase.",
         "linkGithub": "https://github.com/camyael/Aquira",
