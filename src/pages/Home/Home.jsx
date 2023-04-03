@@ -1,8 +1,12 @@
+import profile from '../../assets/img/portfolio/portfolio-profile.png';
+import { Navbar } from '../../components';
+
 const Home = () => {
     return (
         <section id="home">
+            <Navbar/>
             <div id="img-principal">
-                <img src={`${process.env.PUBLIC_URL}/img/20221121_130049.jpg`} alt="presentacion" oncontextmenu="return false"/>
+                <img src={profile} alt="presentacion"/>
             </div>
             <div className="presentacion">
                 <p><span className="hi-there">hi there</span> ♡</p>
@@ -13,4 +17,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Home;

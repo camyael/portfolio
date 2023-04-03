@@ -1,23 +1,14 @@
 // import { useEffect, useState } from "react"
-import skillsJson from "../json/skills.json"
+import skillsJson from "../../json/skills.json"
 
 const Skills = () => {
-    // const [skills, setSkills] = useState
-
-    // useEffect(() => {
-    //     fetch('/json/skills.json')
-    //     .then(res => res.json())
-    //     .then(datos => {
-    //         setSkills(datos)
-    //     })
-    // }, [setSkills])
-
     return (
         <section id="skills">
+            <div className="figure_star"></div>
             <h3>Skills</h3>
             <div className="skills-all">
                 {skillsJson.map(item => (
-                    <div className="skills-img">
+                    <div className="skills-img" key={item.name}>
                         <div className="skills-img-img">
                             <img src={`${process.env.PUBLIC_URL}/img/skills/${item.img}`} alt={item.name} />
                         </div>
