@@ -24,11 +24,23 @@
         "name" : "MongoDB"
     },
     {
+        "img" : "sass.svg",
+        "name" : "Sass"
+    },
+    {
+        "img" : "figma.svg",
+        "name": "Figma"
+    },
+    {
         "img" : "git.svg",
         "name" : "Git"
     },
     {
         "img" : "github.svg",
         "name" : "Github"
+    },
+    {
+        "img" : "adobe-photoshop.svg",
+        "name" : "Photoshop"
     }
 ]
