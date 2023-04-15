@@ -32,15 +32,15 @@
         "name": "Figma"
     },
     {
+        "img" : "adobe-photoshop.svg",
+        "name" : "Photoshop"
+    },
+    {
         "img" : "git.svg",
         "name" : "Git"
     },
     {
         "img" : "github.svg",
         "name" : "Github"
-    },
-    {
-        "img" : "adobe-photoshop.svg",
-        "name" : "Photoshop"
     }
 ]
