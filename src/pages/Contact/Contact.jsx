@@ -1,8 +1,15 @@
-import send from '../../assets/img/portfolio/send.svg'
+import send from '../../assets/img/portfolio/send.svg';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-    const handleSubmit = evt => {
-        evt.preventdefault()
+    const handleSubmit = (evt) => {
+        evt.preventDefault();
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, evt.target, process.env.REACT_APP_PUBLIC_KEY)
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
     }
 
     return (
@@ -13,19 +20,19 @@ const Contact = () => {
             <form className="contact_form" onSubmit={e => handleSubmit(e)}>
                 <div className="contact_form_name">
                     <label>Nombre</label>
-                    <input type='text' placeholder="Ingrese su nombre"/>
+                    <input type='text' name='from_name' placeholder="Ingrese su nombre"/>
                 </div>
                 <div className="contact_form_mail">
                     <label>Email</label>
-                    <input type="text" placeholder="Ingrese su correo electrónico"/>
+                    <input type="text" name='from_mail' placeholder="Ingrese su correo electrónico"/>
                 </div>
                 <div className="contact_form_message">
                     <label>Mensaje</label>
-                    <textarea type="text" placeholder="Escriba su mensaje"/>
+                    <textarea type="text" name='message' placeholder="Escriba su mensaje"/>
                 </div>
                 <div className="contact_form_submit">
                     <input type="submit" value="Enviar"/>
-                    <img src={send} alt="" srcset="" />
+                    <img src={send} alt="" />
                 </div>
             </form>
         </section>

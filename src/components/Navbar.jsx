@@ -4,9 +4,9 @@ const NavBar = () => {
             <nav>
                 <ul>
                     <li><a href="#sobre-mi">sobre mí</a></li>
-                    <li><a href="#proyectos">proyectos</a></li>
+                    <li><a href="#projects">proyectos</a></li>
                     <li><a href="#skills">skills</a></li>
-                    <li><a href="#contacto">contacto</a></li>
+                    <li><a href="#contact">contacto</a></li>
                 </ul>
             </nav>
         </header>
