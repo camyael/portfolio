@@ -172,6 +172,7 @@ img {
   position: absolute;
   border-radius: 100%;
   filter: blur(120px);
+  z-index: -1;
 }
 
 #home .blur_div .pink {
