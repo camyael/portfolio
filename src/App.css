@@ -4,6 +4,7 @@
 :root {
   --primary-color: #B17686;
   --second-color: #9B6171;
+  --font-pink: #F5B5C5;
   --background-color: #F3F3F3;
   --footer-color: #F2E7EA;
 
@@ -64,20 +65,49 @@ img {
   padding: 20px 0px 80px;
 }
 
+#navbar nav ul li {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  position: relative;
+}
+
+#navbar nav ul li p {
+  font-style: italic;
+  color: var(--font-pink);
+  font-weight: bolder;
+}
+
 #navbar nav ul li a {
   font-weight: 500;
   color: var(--font-navbar-color);
 }
 
-#home {
-  background: linear-gradient(107.56deg, #8D4EA3 0%, #EAAFC8 72.29%);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
-  min-height: 98vh;
-  border-bottom-left-radius: 150px;
-  border-bottom-right-radius: 150px;
+/* animación subrayado navbar */
+
+#navbar nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--font-pink);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
 }
 
-#home div {
+#navbar nav ul li:hover a::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#home {
+  min-height: 90vh;
+}
+
+#home > div {
   margin: 0 auto;
   text-align: center;
 }
@@ -96,16 +126,14 @@ img {
 }
 
 #home .presentacion-area {
-  font-family: 'Alata', sans-serif;
-  text-transform: uppercase;
+  font-family: var(--font-normal);
+  font-weight: 400;
   white-space: nowrap;
   border-right: 3px solid;
   width: 18ch;
-  font-size: 14px;
+  font-size: 1rem;
   color: #444;
-  /* letter-spacing: 2.8px; */
   margin: auto auto;
-  /* padding: 2px 0; */
   animation: typing 2s steps(18), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
@@ -118,32 +146,63 @@ img {
   50% { border-color: transparent;}
 }
 
+#home .presentacion-redes {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  column-gap: 30px;
+}
+
+#home .presentacion-redes div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 37px;
+  border: 0.5px solid #B17686;
+  border-radius: 100%;
+}
+
+#home .presentacion-redes div a {
+  width: 24px;
+  height: 24px;
+}
+
+#home .blur_div .blur {
+  position: absolute;
+  border-radius: 100%;
+  filter: blur(120px);
+}
+
+#home .blur_div .pink {
+  width: 350px;
+  height: 350px;
+  background-color: var(--font-pink);
+  top: 90px;
+  right: 0px;
+}
+
+#home .blur_div .coral {
+  width: 280px;
+  height: 280px;
+  background-color: #FFA8A7;
+}
+
 #img-principal {
+  position: relative;
   width: 224px;
   height: 224px;
   border-radius: 50%;
-  border: 0.7px solid #854E5D;
+  border: 0.7px solid var(--font-pink);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* #img-principal::before {
-  content: '';
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #b87c8c;
-  border: 3px solid #000000;
-  position: absolute;
-  top: auto;
-} */
-
 #img-principal img {
   width: 200px;
   border-radius: 50%;
-  background-color: #854e5d8f;
+  background-color: var(--font-pink);
 }
 
 .figure_star {
@@ -153,13 +212,39 @@ img {
   clip-path: polygon(50% 0%, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0 50%, 35% 35%);
 }
 
+#img-principal .star {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  animation: star 5s linear infinite; 
+}
+
+#img-principal .star::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 22px;
+  left:22px;
+  width: 22px;
+  height: 22px;
+  background-color: var(--font-pink);
+  clip-path: polygon(50% 0%, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0 50%, 35% 35%);
+}
+
+@keyframes star {
+  0%  {
+    transform: rotate(-360deg);
+  }
+}
+
 #sobre-mi, #projects, #skills, #contact {
   margin: auto auto;
   text-align: center;
   padding: 100px 0 60px;
 }
 
-#sobre-mi .sobre-mi_info {
+#sobre-mi .sobre-mi_info > div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,17 +262,12 @@ img {
   margin-bottom: 19px;
 }
 
-#sobre-mi .sobre-mi_presentacion a {
-  padding: 5px 10px;
-  background-color: var(--primary-color);
+#sobre-mi .link_cv a {
   color: #FFF;
-  border: none;
-  border-radius: 10px;
-  font-size: 13px;
 }
 
 #sobre-mi h3, #skills h3 {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .sobre-mi_info img {
@@ -310,6 +390,7 @@ img {
 
 #projects .links-proyectos-deploy p{
   color: #fff;
+  font-size: 0.9rem;
 }
 
 #projects .proyectos-info {
@@ -385,7 +466,7 @@ img {
   margin-left: 10px;
 }
 
-.contact_form .contact_form_submit {
+.contact_form .contact_form_submit, #sobre-mi .link_cv a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -405,7 +486,7 @@ img {
   font-weight: 400;
 }
 
-.contact_form .contact_form_submit img {
+.contact_form .contact_form_submit img, #sobre-mi .link_cv img {
   width: 17px;
 }
 

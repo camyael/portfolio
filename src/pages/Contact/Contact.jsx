@@ -16,7 +16,7 @@ const Contact = () => {
         <section id="contact">
             <div className="figure_star"></div>
             <h3>Contacto</h3>
-            <p>Para contactarme completa el formulario o envíame un correo - camilavillaverde3@gmail.com</p>
+            <p>Para contactarme vía mail completa el formulario o envíame un correo - camilavillaverde3@gmail.com</p>
             <form className="contact_form" onSubmit={e => handleSubmit(e)}>
                 <div className="contact_form_name">
                     <label>Nombre</label>
@@ -31,8 +31,8 @@ const Contact = () => {
                     <textarea type="text" name='message' placeholder="Escriba su mensaje"/>
                 </div>
                 <div className="contact_form_submit">
-                    <input type="submit" value="Enviar"/>
                     <img src={send} alt="" />
+                    <input type="submit" value="Enviar"/>
                 </div>
             </form>
         </section>

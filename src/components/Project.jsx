@@ -38,7 +38,7 @@ const Project = () => {
                         <div className='proyectos-info'>
                             <p>{item.title}</p>
                             <div className='links-proyectos'>
-                                    <a className='links-proyectos-deploy' href={item.linkDeploy} target='_blank' rel="noreferrer"> <p>deploy</p></a>
+                                    <a className='links-proyectos-deploy' href={item.linkDeploy} target='_blank' rel="noreferrer"> <p>Deploy</p></a>
                                 <div className='links-proyectos-github'>
                                     <a href={item.linkGithub} target='_blank' rel="noreferrer">
                                         <img src={github} alt={`github-${item.title}`}/>
