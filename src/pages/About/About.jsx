@@ -17,7 +17,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className='link_cv'>
-                    <a href="/files/Camila-Yael-Villaverde_Curriculum.pdf" target='_blank' download={''}><img src={download} alt='descargar'/>Descargar cv</a>
+                    <a href={`${process.env.PUBLIC_URL}/files/Camila-Yael-Villaverde_Curriculum.pdf`} target='_blank' rel='noreferrer' download={'Curriculum'}><img src={download} alt='descargar'/>Descargar cv</a>
                 </div>
             </div>
         </section>
