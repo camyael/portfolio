@@ -550,7 +550,7 @@ img {
 .contact_form .contact_form_mail > label,
 .contact_form .contact_form_message > label {
   color: var(--primary-color);
-  font-size: 0.rem;
+  font-size: 1rem;
   position: absolute;
   padding: 0 8px;
   top: -15px;
