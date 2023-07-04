@@ -1,7 +1,10 @@
 import dev from '../../assets/img/portfolio/illustration-dev.svg'
 import download from '../../assets/img/portfolio/download.svg'
+import { useState } from 'react'
 
 const About = () => {
+    const [ dowload, setDowload ] = useState(false)
+
     return (
         <section id="sobre-mi">
             <div className="figure_star"></div>
@@ -17,7 +20,20 @@ const About = () => {
                     </div>
                 </div>
                 <div className='link_cv'>
-                    <a href={`${process.env.PUBLIC_URL}/files/Camila-Yael-Villaverde_Curriculum.pdf`} target='_blank' rel='noreferrer' download={''}><img src={download} alt='descargar'/>Descargar cv</a>
+                    <a href={`${process.env.PUBLIC_URL}/files/Camila-Yael-Villaverde_Curriculum.pdf`} target='_blank' rel='noreferrer' download={''} onClick={() => setDowload(true)}>
+                        {
+                            !dowload
+                            ? <img src={download} alt='descargar'/>
+                            : <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                        }
+                        {
+                            !dowload
+                            ? <p>Descargar cv</p>
+                            : <p>Descargado</p>
+                        }
+                    </a>
                 </div>
             </div>
         </section>
