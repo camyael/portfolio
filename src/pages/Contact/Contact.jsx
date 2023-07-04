@@ -1,12 +1,16 @@
+import { useState } from 'react';
 import send from '../../assets/img/portfolio/send.svg';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const [ submit, setSubmit ] = useState(false)
+
     const handleSubmit = (evt) => {
         evt.preventDefault();
         emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, evt.target, process.env.REACT_APP_PUBLIC_KEY)
         .then((result) => {
             console.log(result.text);
+            setSubmit(true)
         }, (error) => {
             console.log(error.text);
         });
@@ -33,8 +37,14 @@ const Contact = () => {
                             <textarea type="text" name='message' placeholder="Escriba su mensaje"/>
                         </div>
                         <div className="contact_form_submit">
-                            <img src={send} alt="" />
-                            <input type="submit" value="Enviar"/>
+                            {
+                                !submit
+                                ? <img src={send} alt="" />
+                                : <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                              </svg>
+                            }
+                            <input type="submit" value={!submit ? "Enviar" : "Enviado"}/>
                         </div>
                     </form>
                 </div>

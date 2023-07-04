@@ -583,6 +583,10 @@ img {
   font-weight: 400;
 }
 
+.contact_form .contact_form_submit svg {
+  color: #fff;
+}
+
 .contact_form .contact_form_submit img, #sobre-mi .link_cv img {
   width: 17px;
 }
