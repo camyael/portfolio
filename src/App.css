@@ -413,6 +413,7 @@ img {
 
 #projects .container > button {
   border: none;
+  background: none;
   cursor: pointer;
 }
 
@@ -720,7 +721,8 @@ img {
     margin: 20px 0 5px;
   }
 
-  #projects .container-proyectos .item-proyectos:nth-child(2),   #projects .container-proyectos .item-proyectos:nth-child(3)  {
+  #projects .container-proyectos .item-proyectos:nth-child(2),
+  #projects .container-proyectos .item-proyectos:nth-child(3)  {
     display: none;
   }
 
