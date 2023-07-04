@@ -721,6 +721,15 @@ img {
     margin: 20px 0 5px;
   }
 
+  #projects .container-proyectos .item-proyectos {
+    width: 296px;
+    height: 225px;
+  }
+
+  #projects .item-proyectos > img {
+    width: 267px;
+  }
+
   #projects .container-proyectos .item-proyectos:nth-child(2),
   #projects .container-proyectos .item-proyectos:nth-child(3)  {
     display: none;
@@ -748,4 +757,15 @@ img {
     width: 100%;
     padding: 8px 20px 8px 0;
   }
+}
+
+@media screen and (max-width: 425px) {
+  #projects .container-proyectos .item-proyectos {
+    width: 207px;
+    height: 188px;
+  }
+
+  #projects .item-proyectos > img {
+    width: 187px;
+}
 }
