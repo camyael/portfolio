@@ -8,8 +8,16 @@
         "name": "CSS 3"
     },
     {
+        "img" : "sass.svg",
+        "name" : "Sass"
+    },
+    {
         "img" : "javascript.svg",
-        "name" : "Javascript"
+        "name" : "JavaScript"
+    },
+    {
+        "img" : "typescript.svg",
+        "name" : "TypeScript"
     },
     {
         "img" : "react.svg",
@@ -24,8 +32,12 @@
         "name" : "MongoDB"
     },
     {
-        "img" : "sass.svg",
-        "name" : "Sass"
+        "img" : "express-js.svg",
+        "name" : "Express JS"
+    },
+    {
+        "img" : "npm.svg",
+        "name" : "NPM"
     },
     {
         "img" : "figma.svg",
