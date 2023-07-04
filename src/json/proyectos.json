@@ -1,5 +1,12 @@
 [
     {
+        "img": "clothege.png",
+        "title": "Clothege",
+        "description": "Proyecto Front-End para prueba de api realizada en NodeJs",
+        "linkGithub": "https://github.com/camyael/clothege",
+        "linkDeploy": "https://clothege.netlify.app/"
+    },
+    {
         "img": "portfolio.png",
         "title": "Portfolio",
         "description": "Portfolio personal",
@@ -21,11 +28,11 @@
         "linkDeploy": "https://camyael.github.io/pink_record_player/"
     },
     {
-        "img": "clothege.png",
-        "title": "Clothege",
-        "description": "Proyecto Front-End para prueba de api realizada en NodeJs",
-        "linkGithub": "https://github.com/camyael/clothege",
-        "linkDeploy": "https://clothege.netlify.app/"
+        "img": "github-finder.png",
+        "title": "Github Finder",
+        "description": "Buscador de usuarios de Github",
+        "linkGithub": "https://github.com/camyael/github-finder",
+        "linkDeploy": "https://githubfinder-camyael.netlify.app/"
     },
     {
         "img": "desarrolloweb.png",
