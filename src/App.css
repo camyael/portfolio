@@ -170,7 +170,7 @@ img {
 }
 
 #home .hi-there {
-  font-family: 'Sacramento', cursive;
+  font-family: 'Sacramento', sans-serif;
   font-style: italic;
   font-size: 2.5rem;
   color: #444;
@@ -648,9 +648,12 @@ img {
 }
 
 @media screen and (max-width: 1025px) {
-
   #contact {
-    width: 60%;
+    width: 80%;
+  }
+
+  #contact .contact-column {
+    width: 100%;
   }
 }
 
@@ -727,5 +730,20 @@ img {
 
   #contact {
     width: 80%;
+  }
+
+  #contact .contact-column {
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  #contact .contact-mail {
+    width: auto;
+  }
+
+  .contact_form .contact_form_submit {
+    width: 100%;
+    padding: 8px 20px 8px 0;
   }
 }
