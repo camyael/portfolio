@@ -30,7 +30,7 @@ const Project = () => {
 
     return(
         <div className='container'>
-            <div onClick={handle_prev}><img className='control prev-project' src={prev} alt=''/></div>
+            <button onClick={handle_prev}><img className='control prev-project' src={prev} alt=''/></button>
             <div className='container-proyectos'>
                 {selectedProject.map(item => (
                     <div className='item-proyectos' key={item.title}>
@@ -49,7 +49,7 @@ const Project = () => {
                     </div>
                 ))}
             </div>
-            <div onClick={handle_next}><img className='control next-project' src={next} alt=''/></div>
+            <button onClick={handle_next}><img className='control next-project' src={next} alt=''/></button>
         </div>
     )
 }

@@ -33,13 +33,13 @@ body {
   font-size: 1rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Alata', sans-serif;
   font-size: 1.4rem;
   line-height: 2.438rem;
 }
 
-h3 {
+h3, h4 {
   font-weight: normal;
 }
 
@@ -216,16 +216,22 @@ img {
   align-items: center;
   width: 37px;
   height: 37px;
-  border: 0.5px solid #B17686;
   border-radius: 100%;
 }
 
 #home .presentacion-redes div a {
   width: 24px;
   height: 24px;
+  color: var(--second-color);
+  transition: .4s ease all;
 }
 
-#home .blur_div .blur {
+#home .presentacion-redes div a:hover {
+  color: var(--primary-color);
+  transform: scale(1.3)
+}
+
+#home .blur_div .blur, #contact .blur_div .blur {
   position: absolute;
   border-radius: 100%;
   filter: blur(120px);
@@ -240,7 +246,7 @@ img {
   right: 0px;
 }
 
-#home .blur_div .coral {
+#home .blur_div .coral,  #contact .blur_div .coral {
   width: 280px;
   height: 280px;
   background-color: #FFA8A7;
@@ -324,7 +330,7 @@ img {
   color: #FFF;
 }
 
-#sobre-mi h3, #skills h3 {
+#sobre-mi h3, #skills h3, #contact h3 {
   padding-bottom: 30px;
 }
 
@@ -379,10 +385,12 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: .3s ease all;
 }
 
 #skills .skills-img:hover {
   transform: scale(1.1);
+  background-color: transparent;
 }
 
 #skills .skills-img img {
@@ -403,11 +411,22 @@ img {
   padding: 2px 50px;
 }
 
+#projects .container > button {
+  border: none;
+  cursor: pointer;
+}
+
 #projects .container .control {
   width: 40px;
   height: 40px;
-  background-color: #dbdbdb;
+  background-color: transparent;
   border-radius: 50%;
+  transition: .3s ease all;
+}
+
+#projects .container button:hover .control, #projects .container button:hover .control{
+  background-color: #dbdbdb;
+  transform: scale(1.1);
 }
 
 #projects .container-proyectos .item-proyectos {
@@ -442,12 +461,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid var(--primary-color);
   border-radius: 5px;
-}
-
-#projects .links-proyectos-deploy p{
   color: #fff;
   font-size: 0.9rem;
+  transition: .4s ease all;
+}
+
+#projects .links-proyectos .links-proyectos-deploy:hover {
+  background-color: transparent;
+  color: var(--primary-color);
 }
 
 #projects .proyectos-info {
@@ -467,18 +490,27 @@ img {
 }
 
 #contact {
-  width: 30%;
   margin-bottom: 140px;
+  position: relative;
 }
 
-#contact > p {
+#contact .contact-column {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact .contact-mail {
+  width: 50%;
+}
+
+#contact .contact-mail p {
   font-size: 0.875rem;
   padding: 0 30px;
-  margin-top: 10px;
 }
 
 #contact .contact_form {
-  position: relative;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -500,6 +532,12 @@ img {
   border-radius: 10px;
   font-size: 0.825rem;
   margin: 0 auto;
+}
+
+.contact_form .contact_form_name > input:focus,
+.contact_form .contact_form_mail > input:focus,
+.contact_form .contact_form_message > textarea:focus {
+  outline: 1px solid var(--second-color);
 }
 
 .contact_form .contact_form_message > textarea {
@@ -529,6 +567,12 @@ img {
   border-radius: 10px;
   margin: 0 auto;
   padding: 8px 0;
+  transition: .4s ease all;
+} 
+
+.contact_form .contact_form_submit:hover, #sobre-mi .link_cv a:hover {
+  background-color: var(--second-color);
+  transform: scale(1.1)
 }
 
 .contact_form .contact_form_submit input {
@@ -543,36 +587,39 @@ img {
   width: 17px;
 }
 
-#footer, #footer .footer_networks {
+#contact .contact-networks a {
   display: flex;
+  align-items: center;
+  column-gap: 20px;
+  transition: .4s ease all;
+  margin-bottom: 20px;
+}
+
+#contact .contact-networks svg {
+  width: 26px;
+  color: var(--second-color);
+}
+
+#contact .contact-networks a:hover {
+  color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+#contact .contact-networks a:hover svg {
+  color: var(--primary-color)
+}
+
+#contact .blur_div .coral {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  background-color: var(--font-pink);
 }
 
 #footer {
   background-color: var(--footer-color);
-  min-height: 128px;
-  flex-flow: column nowrap;
-  row-gap: 15px;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer_networks {
-  column-gap: 40px;
-}
-
-.footer_networks > a {
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer_networks > a > img {
-  width: 25px;
-  height: 25px;
+  padding: 15px 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 1279px) {
@@ -666,37 +713,8 @@ img {
     margin: 20px 0 5px;
   }
 
-  #projects .container-proyectos .item-proyectos {
-    width: 131px;
-    height: 131px;
-  }
-
-  #projects .item-proyectos > img {
-    width: 116px
-  }
-
-  #projects .proyectos-info > p {
-    font-size: 0.8rem;
-  }
-
-  #projects .container-proyectos {
-    padding: 2px 0;
-    flex-flow: row wrap;
-    justify-content: center;
-    row-gap: 5px;
-  }
-
-  #projects .links-proyectos img {
-    width: 24px;
-    height: 24px;
-  }
-
-  #projects .links-proyectos .links-proyectos-deploy {
-    height: 24px;
-  }
-
-  #projects .links-proyectos-deploy p {
-    font-size: 0.7rem;
+  #projects .container-proyectos .item-proyectos:nth-child(2),   #projects .container-proyectos .item-proyectos:nth-child(3)  {
+    display: none;
   }
 
   .contact_form .contact_form_submit, #sobre-mi .link_cv a {
