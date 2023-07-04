@@ -759,7 +759,7 @@ img {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 375px) {
   #projects .container-proyectos .item-proyectos {
     width: 207px;
     height: 188px;
