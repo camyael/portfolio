@@ -20,7 +20,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className='link_cv'>
-                    <a href={`${process.env.PUBLIC_URL}/files/Camila-Yael-Villaverde_Curriculum.pdf`} target='_blank' rel='noreferrer' download={''} onClick={() => setDowload(true)}>
+                    <a href={`${process.env.PUBLIC_URL}/files/Camila-Villaverde_CV.pdf`} target='_blank' rel='noreferrer' download={''} onClick={() => setDowload(true)}>
                         {
                             !dowload
                             ? <img src={download} alt='descargar'/>
