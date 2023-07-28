@@ -1,5 +1,12 @@
 [
     {
+        "img": "sunnyThoughts.png",
+        "title": "Sunny Thoughts",
+        "description": "Landing page para una aplicación de notas",
+        "linkGithub": "https://github.com/camyael/notes-app-landing-page",
+        "linkDeploy": "https://sunny-thoughts.vercel.app/"
+    },
+    {
         "img": "clothege.png",
         "title": "Clothege",
         "description": "Proyecto Front-End para prueba de api realizada en NodeJs",
