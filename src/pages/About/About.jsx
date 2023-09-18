@@ -12,8 +12,8 @@ const About = () => {
             <div className="sobre-mi_info">
                 <div>
                     <div className='sobre-mi_presentacion'>
-                        <p>¡Hola! Mi nombre es Camila, soy Desarrolladora Full Stack y actualmente me encuentro capacitándome como Diseñadora UX/UI para seguir mejorando mis servicios para clientes y mis proyectos personales.</p>
-                        <p>Me interesé en la programación por casualidad a finales del 2021 y animarme a meterme de lleno fue una de las mejores decisiones que tomé. Mi objetivo profesional es insertarme en el mundo laboral IT, y seguir aprendiendo y aplicando mis conocimientos en nuevos proyectos y desafíos.</p>
+                        <p>¡Hola! Mi nombre es Camila, Desarrolladora Full Stack con preferencia al Frontend, y Diseñadora UX/UI. Me caracterizo por ser responsable, proactiva y colaborativa; disfruto trabajando en equipo.</p>
+                        <p>Me interesé en la programación por casualidad a finales del 2021 y animarme a entrar a este mundo fue una de las mejores decisiones que tomé. Mi objetivo principal es adquirir experiencia y crecer como profesional en la industria IT, donde pueda aplicar los conocimientos y habilidades obtenidos hasta ahora y enfrentar nuevos desafíos.</p>
                     </div>
                     <div className="sobre-mi-img">
                         <img src={dev} alt="illustration developer"/>
