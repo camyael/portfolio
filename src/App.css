@@ -663,12 +663,14 @@ img {
     display: flex;
     flex-flow: column nowrap;
     padding: 20px 0 100px;
+    position: relative;
   }
 
   #navbar .burger_button {
     border: none;
     background-color: transparent;
     display: block;
+    position: relative;
   }
 
   #navbar nav ul {
@@ -681,7 +683,13 @@ img {
   #navbar nav.isActive ul {
     display: flex;
     flex-flow: column nowrap;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
     height: 25vh;
+    background-color: rgba(243, 243, 243, 0.929);
+    margin-top: 10px;
   }
 
   #navbar nav ul li {
