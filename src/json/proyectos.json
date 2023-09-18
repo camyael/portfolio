@@ -1,48 +1,48 @@
 [
     {
-        "img": "sunnyThoughts.png",
+        "img": "sunnyThoughts.webp",
         "title": "Sunny Thoughts",
         "description": "Landing page para una aplicación de notas",
         "linkGithub": "https://github.com/camyael/notes-app-landing-page",
         "linkDeploy": "https://sunny-thoughts.vercel.app/"
     },
     {
-        "img": "clothege.png",
+        "img": "clothege.webp",
         "title": "Clothege",
         "description": "Proyecto Front-End para prueba de api realizada en NodeJs",
         "linkGithub": "https://github.com/camyael/clothege",
         "linkDeploy": "https://clothege.netlify.app/"
     },
     {
-        "img": "portfolio.png",
+        "img": "portfolio.webp",
         "title": "Portfolio",
         "description": "Portfolio personal",
         "linkGithub": "https://github.com/camyael/portfolio",
         "linkDeploy": "https://camyael.github.io/portfolio/"
     },
     {
-        "img": "reactjs.png",
+        "img": "reactjs.webp",
         "title": "Aquira",
         "description": "Aquira es un ecommerce ficticio, que simula un emprendimiento de ventas de productos importados de belleza. Se utilizó React Hooks para el manejo de estados y para la navegación y enrutados, React Router Dom y Firebase.",
         "linkGithub": "https://github.com/camyael/Aquira",
         "linkDeploy": "https://aquira.netlify.app/"
     },
     {
-        "img": "javascript.png",
+        "img": "javascript.webp",
         "title": "Record Player",
         "description": "Proyecto diseñado a mano con HTML y CSS",
         "linkGithub": "https://github.com/camyael/pink_record_player",
         "linkDeploy": "https://camyael.github.io/pink_record_player/"
     },
     {
-        "img": "github-finder.png",
+        "img": "github-finder.webp",
         "title": "Github Finder",
         "description": "Buscador de usuarios de Github",
         "linkGithub": "https://github.com/camyael/github-finder",
         "linkDeploy": "https://githubfinder-camyael.netlify.app/"
     },
     {
-        "img": "desarrolloweb.png",
+        "img": "desarrolloweb.webp",
         "title": "Plant et Pots",
         "description": "Plant et Pots es un proyecto creado para el curso de Desarrollo Web de Coderhouse.",
         "linkGithub": "https://github.com/camyael/plant_et_pots",
