@@ -32,12 +32,28 @@
         "name" : "MongoDB"
     },
     {
+        "img" : "sqlite.svg",
+        "name" : "SQLite"
+    },
+    {
         "img" : "express-js.svg",
         "name" : "Express JS"
     },
     {
         "img" : "npm.svg",
         "name" : "NPM"
+    },
+    {
+        "img" : "bootstrap.svg",
+        "name" : "Bootstrap"
+    },
+    {
+        "img" : "vite.svg",
+        "name" : "Vite Js"
+    },
+    {
+        "img" : "firebase.svg",
+        "name" : "Firebase"
     },
     {
         "img" : "figma.svg",
